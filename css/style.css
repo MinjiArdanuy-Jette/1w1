@@ -59,19 +59,12 @@ section {
 #video {
   background-color: fuchsia;
 }
-
+/*///////////////////////////////////// tableau*/
 #tableau {
   background-color: aquamarine;
 }
 
-table {
-  border: 1px solid #aaa;
-}
-
-td {
-  border: 1px solid #aaa;
-}
-
+/*/ ////////////////////////////*/
 #footer {
   background-color: indigo;
 }
