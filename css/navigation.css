@@ -1,0 +1,75 @@
+/*///////////////////Le menu*/
+/* Menu principal du site.
+On utilise un positionnement fixed pour que le menu reste sur chaque section*/
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: fixed;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 10%; /* mettre le menu  sur toute la longueur de la page*/
+  height: 50%;
+  background: linear-gradient(blue, violet);
+  padding: 1rem 1rem; /*espacer le menu*/
+  transform: translateY(-100vw);
+  transition: all 0.25s;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none; /*enlever le soulignement*/
+  text-align: center;
+}
+
+.menu a:active,
+.menu a:hover,
+.menu button:hover,
+.menu .button a:active {
+  color: red;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.menu.bouton-creation {
+  position: relative;
+}
+.menu .bouton-creation .contenu-litteraire {
+  display: none;
+  background: linear-gradient(violet, blue);
+  padding: 10px;
+  position: absolute;
+  left: 150px;
+}
+.menu .bouton-creation:hover .contenu-litteraire {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chk-burger:checked ~ .menu {
+  transform: translateX(0);
+  background: linear-gradient(blue, violet);
+}
+
+.burger {
+  position: fixed;
+  top: 15px;
+  z-index: 1;
+  transform: rotate(0);
+  transition: all 0.25s;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+#chk-burger:checked ~ .burger {
+  transform: scaleX(-1);
+}

@@ -5,68 +5,14 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: crimson;
 }
 
-/*///////////////////Le menu*/
-/* Menu principal du site.
-On utilise un positionnement fixed pour que le menu reste sur chaque section*/
-nav {
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  flex-wrap: wrap;
-  top: 0;
-  left: 0;
-  width: 100%; /* mettre le menu  sur toute la longueur de la page*/
-  background: linear-gradient(blue, violet);
-  padding: 1rem 1rem; /*espacer le menu*/
-}
-
-nav a {
-  display: block;
-  color: white;
-  text-decoration: none; /*enlever le soulignement*/
-}
-
-nav a:active,
-nav a:hover,
-nav button:hover,
-nav .button a:active {
-  color: red;
-}
-
-nav button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-nav .bouton-creation {
-  position: relative;
-}
-nav .bouton-creation .contenu-litteraire {
-  display: none;
-  background: linear-gradient(violet, blue);
-  padding: 10px;
-  position: absolute;
-  right: 1px;
-}
-nav .bouton-creation:hover .contenu-litteraire {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-img {
-  visibility: visible;
-}
 @media (max-width: 964px) {
   nav {
-    flex-direction: column;
     padding: 1rem 2rem;
-    width: 30%;
-    height: 70%;
+    width: 500px;
   }
   nav button {
     margin: 0;

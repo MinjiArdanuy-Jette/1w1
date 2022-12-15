@@ -6,4 +6,6 @@
 
 .photos figure {
   flex: 0 1 100px;
+  margin: 0;
+  padding: 0;
 }
