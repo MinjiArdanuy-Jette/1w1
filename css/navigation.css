@@ -9,8 +9,8 @@ On utilise un positionnement fixed pour que le menu reste sur chaque section*/
   flex-wrap: wrap;
   top: 0;
   left: 0;
-  width: 10%; /* mettre le menu  sur toute la longueur de la page*/
-  height: 50%;
+  width: 300px; /* mettre le menu  sur toute la longueur de la page*/
+  height: 500px;
   background: linear-gradient(blue, violet);
   padding: 1rem 1rem; /*espacer le menu*/
   transform: translateY(-100vw);
@@ -18,7 +18,6 @@ On utilise un positionnement fixed pour que le menu reste sur chaque section*/
 }
 
 .menu a {
-  display: block;
   color: white;
   text-decoration: none; /*enlever le soulignement*/
   text-align: center;
@@ -29,29 +28,6 @@ On utilise un positionnement fixed pour que le menu reste sur chaque section*/
 .menu button:hover,
 .menu .button a:active {
   color: red;
-}
-
-.menu button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-.menu.bouton-creation {
-  position: relative;
-}
-.menu .bouton-creation .contenu-litteraire {
-  display: none;
-  background: linear-gradient(violet, blue);
-  padding: 10px;
-  position: absolute;
-  left: 150px;
-}
-.menu .bouton-creation:hover .contenu-litteraire {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #chk-burger:checked ~ .menu {
