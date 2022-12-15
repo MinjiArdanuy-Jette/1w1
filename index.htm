@@ -1,84 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tp2-étape-2</title>
+    <title>tp2</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/calendrier.css" />
+    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/formulaire.css" />
+    <link rel="stylesheet" href="css/galerie.css" />
+    <link rel="stylesheet" href="css/creations.css" />
+    <link rel="stylesheet" href="css/bas-page.css" />
   </head>
   <body>
+    <!--///////////////////////////Navigation menu///////////-->
+    <input type="checkbox" id="chk-burger" />
+    <label for="chk-burger" class="burger"
+      ><img
+        src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-2&color=000"
+        width="32"
+        height="32"
+      />></label
+    >
     <nav>
       <a href="#accueil">Accueil</a>
-      <a href="#inscription">Inscription</a>
+      <div class="bouton-creation">
+        <a href="#creations"
+          ><button>Créations littéraires des années précédentes</button></a
+        >
+
+        <div class="contenu-litteraire">
+          <a href="#creation-poesie"> Poésie</a>
+          <a href="#creation-recits">Récits</a>
+          <a href="#creation-theatre">Théâtre</a>
+        </div>
+      </div>
+
       <a href="#galerie">Galerie</a>
-      <a href="#evenement">Événements</a>
+      <a href="#calendrier">Calendrier</a>
       <a href="#video">Vidéo</a>
-      <a href="#tableau">Tableau</a>
-      <a href="#footer">Footer</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#pied-page">Informations supplémentaires</a>
     </nav>
 
     <!--//////////////////////////section#accueil-->
     <section id="accueil">
       <!--/////////////////////////h1>{Accueil}-->
-      <h1>TP2</h1>
-      <h2>Mes créations littéraires: Poésie, théâtre et récits</h2>
-      <h2>Programme de littérature</h2>
+      <h1>Atelier de création littéraire</h1>
+      <p>Théâtre, poésie et récits</p>
       <h3>Autrice : Minji Ardanuy-Jetté</h3>
+      <a href="https://github.com/MinjiArdanuy-Jette/1w1">Github page</a>
+      <h1>TP2</h1>
+      <h3></h3>
       <p>
         1W1 - Mise en page Web - Technique d'intégration multimédia - Collège de
         Maisonneuve
       </p>
+
+      <p>Automne 2022</p>
     </section>
-    <section id="inscription">
-      <h1>Inscription</h1>
+
+    <!--/////////////// Fin section #accueil/////-->
+
+    <!--//////////////////////Début section #creations//////////-->
+    <section id="creations">
+      <h1>Créations littéraires de nos anciens élèves</h1>
+      <p>
+        Voici notre deuxième édition de ces ateliers créatifs lors de la semaine
+        de relâche. Pour avoir un aperçu de nos talents de l'année dernière,
+        quelques textes peuvent être lus en cliquant sur ces liens.
+      </p>
     </section>
+
+    <!--///////////////section#creation-poesie///////////////////-->
+    <section id="creation-poesie">
+      <!--figure>(img[src="images/img_1.jpg"])+figcaption>lorem3-->
+      <!--div>(h2>(lorem2))>p>(lorem)-->
+      <h1>Atelier de poésie</h1>
+      <article class="principal">
+        <div>
+          <h2>Le poème encadré</h2>
+          <p>
+            La personne devait choisir une paire de vers de début et de fin
+            connu dans une liste prédéfinie sans savoir la provenance. Par la
+            suite, créer un poème à partir de ces vers.
+          </p>
+        </div>
+        <figure>
+          <img
+            src="images/Je-nommerais-désert-ce-château-que-tu-fus.jpg"
+            alt=""
+            width="150px"
+            height="150px"
+          />
+          <figcaption>Retour du soleil</figcaption>
+        </figure>
+      </article>
+      <article class="principal">
+        <div>
+          <h2>L'oreille-objectif</h2>
+          <p>
+            Écouter une conversation, une musique ou autre d'un oreille
+            distraite et donner un sens aux paroles dans un poème. Pouvez
+            rajouter du texte si besoin.
+          </p>
+        </div>
+        <figure>
+          <img src="images/Malheur.jpeg" alt="" width="150px" height="150px" />
+          <figcaption>Malheur</figcaption>
+        </figure>
+      </article>
+      <article class="principal">
+        <div>
+          <h2>L'atomisation</h2>
+          <p>
+            À partir d'un texte d'au moins 250 mots, charcuter ce dernier afin
+            de ressortir un sujet, un thème en peu de mots dans un poème.
+          </p>
+        </div>
+        <figure>
+          <img
+            src="images/a_la_recherche_du_bien-etre.jpeg"
+            alt=""
+            width="150px"
+            height="150px"
+          />
+          <figcaption>À la recherche du bien-être</figcaption>
+        </figure>
+      </article>
+    </section>
+    <!--/////////////////////////Fin section #creation-poeeie///////////////////-->
+
+    <!--Début section #creation-recits-->
+    <section id="creation-recits">
+      <h1>Atelier de récits</h1>
+      <article class="principal">
+        <div>
+          <h2>Atelier 1</h2>
+          <p>
+            D'écrire un début d'histoire en 30 minutes sur une personne de votre
+            choix. Ce n'est pas grave que ce ne soit pas parfait, le défi repose
+            sur cela.
+          </p>
+        </div>
+        <figure>
+          <img
+            src="images/Texte-2-Revue.jpg"
+            alt=""
+            width="150px"
+            height="250px"
+            alt="Récit nommé Adieu"
+          />
+          <figcaption>Adieu</figcaption>
+        </figure>
+      </article>
+      <article class="principal">
+        <div>
+          <h2>Atelier 2</h2>
+          <p>
+            Pour briser la glace du premier cours, il fallait écrire une
+            histoire de maximum 500 mots sur soi. Cependant, pas à la première
+            personne, mais plutôt d'un regard extérieur(troisième personne du
+            singulier).
+          </p>
+        </div>
+        <figure>
+          <img
+            src="images/Autoportrait-indirect.jpg"
+            width="150px"
+            height="250px"
+            alt="Récit nommé Autoportrait indirect"
+          />
+          <figcaption>Autoportrait indirect</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!--/////////////////////Fin section #creation-recits///////////////-->
+
+    <!--Début section #creation-recits-->
+    <section id="creation-theatre">
+      <h1>Atelier de théâtre</h1>
+      <article class="principal">
+        <div>
+          <h2>Histoire</h2>
+          <p>
+            Monologue d'une écrivaine dans son bureau depuis des heures qui
+            cherche l'inspiration de son prochain roman. Cependant, aucune idée
+            originale ne sort et elle ne fait que projeter ses envies
+            lorsqu'elle sera célèbre.
+          </p>
+        </div>
+        <figure>
+          <a
+            href="https://docs.google.com/document/d/1c2I7PmYcA2SuwUdLL2cOrDE82GJy3GdRkP2N65aosw4/edit?usp=sharing"
+          >
+            <img
+              src="images/ecriture-en-fuite.png"
+              alt="Récit nommé Adieu"
+              width="150px"
+              height="250px"
+            />
+          </a>
+          <figcaption>L'écriture en fuite</figcaption>
+        </figure>
+      </article>
+      <article class="principal">
+        <div>
+          <h2>Histoire</h2>
+          <p>
+            Lors d'une répétition dans un grand théâtre, un meurtre survient.
+            Les quatre personnes présent sur la scène de crime n'ont qu'une
+            pensée : cacher le corps pour que la pièce se déroule comme convenu
+            pour ne pas que la pièce soit annulée.
+          </p>
+        </div>
+        <figure>
+          <a
+            href="https://docs.google.com/document/d/1XkaXt5sMGHZVupkb59okzqjjSbFXaKE8vF8YB4gwqe8/edit?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="images/Oups!....png"
+              width="150px"
+              height="250px"
+              alt="Scénario de théâtre nommé Oups ! ..."
+            />
+          </a>
+          <figcaption>Oups ! ...</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!--////////////////Fin section #creation////////////////////-->
+
+    <!--//////////Début section #galerie//////////-->
     <section id="galerie">
       <h1>Galerie</h1>
+      <!--(figure>img>figcaption>(lorem2))*5-->
+      <figure class="photos">
+        <figure>
+          <img
+            src="images/affiches_presentation.jpg"
+            alt="#"
+            width="300px"
+            height="300px"
+          />
+          <figcaption>
+            Soirée de la présentation finale de l'atelier de création théâtrale
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/revues.jpg" alt="#" width="300px" height="300px" />
+          <figcaption>Revues lors du lancement 2021</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/presentation_revues.jpg"
+            alt="#"
+            width="300px"
+            height="300px"
+          />
+          <figcaption>Lecture publique lors du lancement</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/performance1.jpg"
+            alt="#"
+            width="300px"
+            height="300px"
+          />
+          <figcaption>lecture publique d'un scénario théâtrale</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/performance2.png"
+            alt="#"
+            width="300px"
+            height="300px"
+          />
+          <figcaption>lecture publique d'un scénario théâtrale</figcaption>
+        </figure>
+      </figure>
     </section>
-    <section id="evenement">
-      <h1>Événements</h1>
+    <section id="calendrier">
+      <h1>Calendrier</h1>
+      <!--table>(tr>(td>lorem2)*3)*4-->
+      <table class="date-cours">
+        <!--tr>(th>lorem2)*4-->
+        <caption>
+          Début des cours
+        </caption>
+        <thead>
+          <tr>
+            <th>Ateliers</th>
+            <th>Dates</th>
+            <th>Heures</th>
+            <th>Prix sans <br />la présentation finale</th>
+            <th>
+              Prix avec <br />
+              présentation finale
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Poésie</td>
+            <td>13 mars 2023</td>
+            <td>10h30</td>
+            <td>200$</td>
+            <td>300$</td>
+          </tr>
+          <tr>
+            <td>Théâtre</td>
+            <td>15 mars 2023</td>
+            <td>10h30</td>
+            <td>250$</td>
+            <td>400$</td>
+          </tr>
+          <tr>
+            <td>Récits</td>
+            <td>17 mars 2023</td>
+            <td>10h30</td>
+            <td>250$</td>
+            <td>350$</td>
+          </tr>
+          <tr>
+            <td>Poésie</td>
+            <td>13 mars 2023</td>
+            <td>14h30</td>
+            <td>200$</td>
+            <td>300$</td>
+          </tr>
+          <tr>
+            <td>Théâtre</td>
+            <td>15 mars 2023</td>
+            <td>14h30</td>
+            <td>250$</td>
+            <td>400$</td>
+          </tr>
+          <tr>
+            <td>Récits</td>
+            <td>17 mars 2023</td>
+            <td>14h30</td>
+            <td>250$</td>
+            <td>350$</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <th>Affaires à apporter</th>
+          <th>Carnet, crayon, efface et votre bonne humeur</th>
+        </tfoot>
+      </table>
     </section>
     <section id="video">
       <h1>Vidéo</h1>
+      <p>petit aperçu de nos cours avec des professeurs formidables</p>
+      <div class="youtube">
+        <iframe
+          class="apercu-cours"
+          width="260"
+          height="215"
+          src="https://www.youtube.com/embed/BOpLtPKAxwY"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="apercu-cours"
+          width="260"
+          height="215"
+          src="https://www.youtube.com/embed/WeeJC-gxNdw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="apercu-cours"
+          width="260"
+          height="215"
+          src="https://www.youtube.com/embed/J_QG6PdVrKA"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
-    <section id="tableau">
-      <h1>Tableau</h1>
-      <!--table>(tr>(td>lorem2)*3)*4-->
-      <table class="mon_tableau">
-        <!--tr>(th>lorem2)*3-->
-        <tr>
-          <th>Lorem, ipsum.</th>
-          <th>Illum, maxime.</th>
-          <th>Alias, accusantium!</th>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Commodi, laudantium!</td>
-          <td>Et, alias?</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Accusantium, atque!</td>
-          <td>Incidunt, iure.</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Repellendus, saepe?</td>
-          <td>Temporibus, aut.</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Voluptatibus, sunt?</td>
-          <td>Corrupti, molestias.</td>
-        </tr>
-      </table>
+    <section id="inscription">
+      <h1>Inscription</h1>
+      <form class="formulaire">
+        <label for="txt_prenom">Votre prénom</label>
+        <input type="text" name="txt_prenom" id="txt_prenom" />
+
+        <label for="">Votre nom</label>
+        <input type="text" name="txt_nom" id="txt_nom" />
+
+        <label for="">Votre choix</label>
+        <div>
+          <input type="radio" name="choix_poesie10" id="choix_poesie10" />
+          <label for="choix_poesie10">Poésie à 10h30</label>
+
+          <input type="radio" name="choix_poesie14" id="choix_poesie14" />
+          <label for="choix_poesie14">Poésie à 14h30</label>
+
+          <input type="radio" name="choix_theatre10" id="choix_theatre10" />
+          <label for="choix_theatre10">Théâtre à 10h30</label>
+
+          <input type="radio" name="choix_theatre14" id="choix_theatre14" />
+          <label for="choix_theatre14">Théâtre à 14h30</label>
+
+          <input type="radio" name="choix_recit10" id="choix_recit10" />
+          <label for="choix_recit10">Récits à 10h30</label>
+
+          <input type="radio" name="choix_recit14" id="choix_recit14" />
+          <label for="choix_poesie10">Récits à 14h30</label>
+        </div>
+        <label for="">Votre numéro de téléphone</label>
+        <input type="tel" name="numero_tel" id="numero_tel" />
+        <label for="">Votre courriel</label>
+        <input type="email" name="txt_courriel" id="txt_courriel" />
+
+        <label for=""> Questions ou commentaires ?</label>
+        <textarea
+          name="commentaires"
+          id="commentaires"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <input type="reset" value="Réinitialiser" />
+        <input type="button" value="Envoyer" />
+      </form>
     </section>
-    <section id="footer">
+
+    <!--////////////Début pied dee page////////////-->
+    <section id="pied-page">
       <h1>Pied de page</h1>
+      <!--(dl>(dt>(lorem3))+dd>(lorem5))*3-->
+      <div class="colonne">
+        <dl>
+          <dt>Adresse</dt>
+          <dd>3800 rue Sherbrooke Est, Montréal QC, H1X 2A2</dd>
+        </dl>
+        <dl>
+          <dt>Liens importants</dt>
+          <dd>
+            <a href="https://www.cmaisonneuve.qc.ca/">Collège de Maisonneuve</a>
+          </dd>
+          <dd>
+            <a href="https://www.lunedeplume.fr/seance-ecriture-franche-comte"
+              >Le déroulement d'un atelier d'écriture</a
+            >
+          </dd>
+          <dd>
+            <p>
+              Si vous n'avez pas l'argent pour vivre cette expérience créative
+              avec nous
+            </p>
+            <a
+              href="https://www.ficellesdauteur.fr/idees-pour-atelier-decriture/"
+              >Idées d'atelier d'Écriture à essayer chez soi</a
+            >
+          </dd>
+        </dl>
+        <dl>
+          <dt>Réseaux sociaux</dt>
+          <dd>Consectetur aliquid ratione neque magnam.</dd>
+        </dl>
+        <dl>
+          <dt>Description du département</dt>
+          <dd>
+            profil artistique? profil logique? Les deux ? Amateur de jeux vidéo
+            ? Passionné de nouvelles technologies? Découvrez dans ce département
+            la réalité virtuelle, la programation, l'animation, la 3D et
+            d'autres merveilles et tout ça au même endroit !
+          </dd>
+        </dl>
+      </div>
+      <p>Avis de confidentialité | Privacy Notice</p>
     </section>
+
+    <!--////////////Fin section pied de page///////////-->
   </body>
 </html>

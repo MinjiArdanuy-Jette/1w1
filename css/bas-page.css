@@ -1,0 +1,20 @@
+#pied-page {
+  display: flex;
+}
+
+#pied-page dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.colonne {
+  flex-direction: row;
+}
+
+dl:nth-of-type(4) {
+  width: 50%;
+}

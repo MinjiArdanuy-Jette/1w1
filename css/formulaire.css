@@ -1,0 +1,20 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulaire label {
+  margin: 10px 0 0 0;
+}
+.formulaire label,
+.formulaire input {
+  width: 200px;
+}
+
+.formulaire div input {
+  width: 20px; /* Rapprocher les points et le texte, sinon hérité des autres .formulaire input*/
+}
+
+/*crochet input pour cibler le type; ex. input[text]*/

@@ -1,0 +1,9 @@
+.photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photos figure {
+  flex: 0 1 100px;
+}

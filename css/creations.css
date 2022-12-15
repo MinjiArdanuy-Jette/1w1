@@ -1,0 +1,19 @@
+#creation-poesie,
+#creation-recits,
+#creation-theatre {
+  padding: 20px 20%;
+}
+.principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.principal h2,
+.principal p {
+  margin: 0;
+  padding: 0;
+}
+
+.principal div figure {
+  justify-content: right;
+}

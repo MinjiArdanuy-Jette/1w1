@@ -1,0 +1,10 @@
+.youtube {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.youtube .apercu-cours {
+  justify-content: space-between;
+  padding: 0 20px;
+  border: none; /*Enlever la bordure, car enlever le frameborder du iframe*/
+}

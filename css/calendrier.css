@@ -1,0 +1,22 @@
+#calendrier h1 {
+  padding-bottom: 20px;
+}
+
+.date-cours {
+  border-collapse: collapse;
+  border: 1px solid #aaa;
+}
+
+.date-cours td,
+.date-cours th {
+  border: 1px solid #555;
+  padding: 5px;
+}
+
+.date-cours th {
+  font-size: 1.2rem;
+  /*Pour rendre le fond plus foncé*/
+  background-color: rgba(0, 0, 0, 0.1);
+  /*Pour endre plus pâle
+  background-color: rgba(255, 255, 255, 0.1)*/
+}

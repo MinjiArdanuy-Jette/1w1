@@ -14,11 +14,12 @@ nav {
   display: flex;
   justify-content: space-around;
   position: fixed;
+  flex-wrap: wrap;
   top: 0;
   left: 0;
   width: 100%; /* mettre le menu  sur toute la longueur de la page*/
-  background-color: black;
-  padding: 4px 1rem; /*espacer le menu*/
+  background: linear-gradient(blue, violet);
+  padding: 1rem 1rem; /*espacer le menu*/
 }
 
 nav a {
@@ -26,9 +27,65 @@ nav a {
   color: white;
   text-decoration: none; /*enlever le soulignement*/
 }
+
+nav a:active,
+nav a:hover,
+nav button:hover,
+nav .button a:active {
+  color: red;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+nav .bouton-creation {
+  position: relative;
+}
+nav .bouton-creation .contenu-litteraire {
+  display: none;
+  background: linear-gradient(violet, blue);
+  padding: 10px;
+  position: absolute;
+  right: 1px;
+}
+nav .bouton-creation:hover .contenu-litteraire {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  visibility: visible;
+}
+@media (max-width: 964px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    width: 30%;
+    height: 70%;
+  }
+  nav button {
+    margin: 0;
+    padding: 0;
+  }
+  nav .bouton-creation:hover .contenu-litteraire {
+    align-items: right;
+  }
+  .youtube {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .youtube .apercu-cours {
+    padding: 0 20px;
+  }
+}
 /*Début des sections de la page*/
 section {
-  height: 100vh; /*La section prend toute la page*/
+  min-height: 100vh; /*La section prend toute la page*/
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -52,20 +109,35 @@ section {
   background-color: cornflowerblue;
 }
 
-#evenement {
+#calendrier {
   background-color: darkviolet;
 }
 
 #video {
   background-color: fuchsia;
 }
+
+#creations {
+  background-color: gold;
+}
+
+#creation-poesie {
+  background-color: cyan;
+}
+#creation-recits {
+  background-color: chocolate;
+}
+
+#creation-theatre {
+  background-color: coral;
+}
 /*///////////////////////////////////// tableau*/
-#tableau {
+.date-cours {
   background-color: aquamarine;
 }
 
 /*/ ////////////////////////////*/
-#footer {
+#pied-page {
   background-color: indigo;
 }
 h1 {
