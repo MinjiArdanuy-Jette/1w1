@@ -1,8 +1,36 @@
 #creation-poesie,
 #creation-recits,
 #creation-theatre {
-  padding: 20px 20%;
+  padding: 20px 20%; /*Pour agencer en bloc, pour ne pas qu'ils prennent tout l'espace*/
 }
+/*Alternance des images*/
+#creation-poesie .principal:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+#creation-poesie.principal:nth-of-type(even) figure {
+  margin-right: 30px;
+}
+#creation-recits .principal:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+#creation-recits .principal:nth-of-type(odd) figure {
+  margin-right: 30px;
+}
+
+#creation-theatre .principal:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+#creation-theatre .principal:nth-of-type(even) figure {
+  margin-right: 30px;
+}
+
+#creations p {
+  padding: 0 120px;
+}
+
 .principal {
   display: flex;
   justify-content: space-between;
@@ -14,6 +42,20 @@
   padding: 0;
 }
 
-.principal div figure {
+.principal figure {
   justify-content: right;
+}
+
+.principal figure img {
+  width: 150px;
+  height: 150px;
+}
+
+.principal img:hover {
+  width: 650px;
+  height: 750px;
+}
+
+.principal figcaption {
+  text-align: center;
 }

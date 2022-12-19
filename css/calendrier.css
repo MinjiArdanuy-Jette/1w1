@@ -2,8 +2,12 @@
   padding-bottom: 20px;
 }
 
+.date-cours caption {
+  font-size: 1.5rem;
+}
+
 .date-cours {
-  border-collapse: collapse;
+  border-collapse: collapse; /*Enlever les bordures internes des th ou td*/
   border: 1px solid #aaa;
 }
 
@@ -17,6 +21,7 @@
   font-size: 1.2rem;
   /*Pour rendre le fond plus foncé*/
   background-color: rgba(0, 0, 0, 0.1);
-  /*Pour endre plus pâle
+  /*Info pour moi-même, ne rend pas très bien
+  Pour rendre plus pâle
   background-color: rgba(255, 255, 255, 0.1)*/
 }

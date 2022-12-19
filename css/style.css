@@ -8,25 +8,24 @@ body {
   padding: 0;
   background-color: crimson;
 }
-
-@media (max-width: 964px) {
-  nav {
-    padding: 1rem 2rem;
-    width: 500px;
-  }
-  nav button {
-    margin: 0;
-    padding: 0;
-  }
-  nav .bouton-creation:hover .contenu-litteraire {
-    align-items: right;
-  }
+/*Adaptation de l'écran pour quelques éléments*/
+@media (max-width: 899px) {
   .youtube {
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
-  .youtube .apercu-cours {
-    padding: 0 20px;
+  .photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  dl {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /*Pour que les deux derniers dl ne se chevauchent pas*/
+    padding: 0;
   }
 }
 /*Début des sections de la page*/
@@ -38,53 +37,59 @@ section {
   justify-content: center;
   align-items: center;
 }
-
+/*section #accueil*/
 #accueil {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: crimson;
+  background: linear-gradient(crimson, gold);
 }
-
-#inscription {
-  background-color: chocolate;
+#accueil p {
+  text-align: center;
 }
-
+#accueil a {
+  text-decoration: none;
+  color: black;
+}
+/*Fin section #ccueil*/
 #galerie {
-  background-color: cornflowerblue;
-}
-
-#calendrier {
-  background-color: darkviolet;
+  background: linear-gradient(cornflowerblue, darkviolet);
 }
 
 #video {
-  background-color: fuchsia;
+  background: linear-gradient(fuchsia, midnightblue);
 }
-
+/*formulaire d'inscription avec input*/
+#inscription {
+  background: linear-gradient(midnightblue, indigo);
+}
+/*////////////Articles////////////*/
 #creations {
-  background-color: gold;
+  background: linear-gradient(gold, cyan);
 }
 
 #creation-poesie {
-  background-color: cyan;
+  background: linear-gradient(cyan, chocolate);
 }
 #creation-recits {
-  background-color: chocolate;
+  background: linear-gradient(chocolate, coral);
 }
 
 #creation-theatre {
-  background-color: coral;
+  background: linear-gradient(coral, cornflowerblue);
 }
 /*///////////////////////////////////// tableau*/
+#calendrier {
+  background: linear-gradient(darkviolet, fuchsia);
+}
 .date-cours {
-  background-color: aquamarine;
+  background: linear-gradient(to bottom right, blue, aqua);
 }
 
-/*/ ////////////////////////////*/
+/*/ bas de page////////////////////////////*/
 #pied-page {
-  background-color: indigo;
+  background: linear-gradient(indigo, purple);
 }
 h1 {
   font-size: 3rem;

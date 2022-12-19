@@ -3,18 +3,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*Apparence du formulaire*/
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(255, 255, 255, 0.2);
 }
 
+.formulaire h2 {
+  text-align: center;
+}
 .formulaire label {
   margin: 10px 0 0 0;
-}
-.formulaire label,
-.formulaire input {
   width: 200px;
 }
 
-.formulaire div input {
-  width: 20px; /* Rapprocher les points et le texte, sinon hérité des autres .formulaire input*/
+input[radio] {
+  padding: 20px; /* Rapprocher les points et le texte, sinon hérité des autres .formulaire input*/
 }
 
-/*crochet input pour cibler le type; ex. input[text]*/
+textarea,
+input {
+  background: transparent; /*On ne voit plus le blanc*/
+}
+textarea {
+  /*Pour avoir la même bordure que les input*/
+  border-left: 2px solid rgba(12, 12, 12, 0.87);
+  border-top: 2px solid rgba(12, 12, 12, 0.87);
+}
+
+/*Note à moi-même
+crochet input pour cibler le type; ex. input[text]*/

@@ -5,7 +5,22 @@
 }
 
 .photos figure {
-  flex: 0 1 100px;
+  flex: 0 1 250px; /*grandeur de l'epace entre les figures*/
   margin: 0;
-  padding: 0;
+  padding: 20px; /*Décalage des figures du bord de la page*/
+}
+/*Transition des images */
+.photos figure img {
+  opacity: 30%;
+  transition: opacity 2s;
+  width: 350px;
+  height: 350px;
+}
+
+.photos figure img:hover {
+  opacity: 100%;
+}
+
+.photos figcaption {
+  text-align: center;
 }

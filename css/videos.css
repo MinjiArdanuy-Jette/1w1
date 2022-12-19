@@ -5,6 +5,17 @@
 
 .youtube .apercu-cours {
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 30px;
+  transition: all 2s;
+}
+.apercu-cours iframe {
   border: none; /*Enlever la bordure, car enlever le frameborder du iframe*/
+}
+
+.apercu-cours p {
+  text-align: center;
+}
+
+.youtube .apercu-cours:hover {
+  transform: scale(1.5, 1.5);
 }

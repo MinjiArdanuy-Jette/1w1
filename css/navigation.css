@@ -9,11 +9,11 @@ On utilise un positionnement fixed pour que le menu reste sur chaque section*/
   flex-wrap: wrap;
   top: 0;
   left: 0;
-  width: 300px; /* mettre le menu  sur toute la longueur de la page*/
+  width: 300px; /*Dimensions en rectangle*/
   height: 500px;
   background: linear-gradient(blue, violet);
   padding: 1rem 1rem; /*espacer le menu*/
-  transform: translateY(-100vw);
+  transform: translateY(-100vw); /*Position de base*/
   transition: all 0.25s;
 }
 
@@ -22,30 +22,29 @@ On utilise un positionnement fixed pour que le menu reste sur chaque section*/
   text-decoration: none; /*enlever le soulignement*/
   text-align: center;
 }
-
+/*Survol*/
 .menu a:active,
 .menu a:hover,
 .menu button:hover,
 .menu .button a:active {
   color: red;
 }
-
+/*Comment le menu apparait lorssque le bouton est appuyé*/
 #chk-burger:checked ~ .menu {
   transform: translateX(0);
-  background: linear-gradient(blue, violet);
+  /*background: linear-gradient(blue, violet);*/
 }
-
+/*barre de menu*/
 .burger {
   position: fixed;
   top: 15px;
-  z-index: 1;
-  transform: rotate(0);
+  z-index: 1; /*pour mettre en avant-plan la barre de menu*/
   transition: all 0.25s;
 }
 
 input[type="checkbox"] {
-  visibility: hidden;
+  visibility: hidden; /*On ne voit plus la boite à cocher*/
 }
 #chk-burger:checked ~ .burger {
-  transform: scaleX(-1);
+  transform: scaleX(-1); /*changement de côté de droite à gauche*/
 }
